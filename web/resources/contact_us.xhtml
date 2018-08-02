@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+      <ui:define name="title">Customer :: Register</ui:define>
+
+    <h:head>
+        <title>registration form</title>
+    </h:head>
+    <h:body style='background-color: olive'>
+        <center> <b>Don't hesitate to contact us if you are facing problem.We are ready to reply u instantly.</b>
+        <h2>Contact Us</h2></center>
+        <center>
+        <form name="htmlform" method="post" action="html_form_send.php" >
+             <p:panelGrid columns="2">
+                 <table width="800px" height='auto' style="background-color: cadetblue">
+
+                <tr>
+                    <td valign="top">
+                        <label for="first_name">First Name *</label>
+                    </td>
+                    <td valign="top">
+                        <input  type="text" name="first_name" maxlength="50" size="30"></input>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td valign="top">
+                        <label for="last_name">Last Name *</label>
+                    </td>
+                    <td valign="top">
+                        <input  type="text" name="last_name" maxlength="50" size="30"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top">
+                        <label for="email">Email Address *</label>
+                    </td>
+                    <td valign="top">
+                        <input  type="text" name="email" maxlength="80" size="30"></input>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td valign="top">
+                        <label for="telephone">Mobile No.</label>
+                    </td>
+                    <td valign="top">
+                        <input  type="text" name="telephone" maxlength="30" size="30"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top">
+                        <label for="comments">Comments *</label>
+                    </td>
+                    <td valign="top">
+                        <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align:center">
+                        <input type="submit" value="Submit"></input>
+                    </td>
+                </tr>
+            </table>
+             </p:panelGrid>
+        </form>
+        </center>
+    </h:body>
+</html>
+

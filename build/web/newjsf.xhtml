@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <head>
+        <title>Bootstrap Example</title>
+
+        <meta charset="utf-8"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+
+    <style type="text/css">
+        body {
+            background-color: #CCC;
+            margin:80px 80px 100px 100px;
+            width: fit-content;
+
+        }
+        div#fixedheader {
+            position:fixed;
+            top:0px;
+            left:0px;
+            width:100%;
+            height:20%;
+            color:#CCC;
+            background:#333;
+            padding:20px;
+        }
+        div#fixedfooter {
+            position:fixed;
+            bottom:0px;
+            left:0px;
+            width:100%;
+            color:#CCC;
+            background:#333;
+            padding:8px;
+        }
+    </style>
+    <body style="background-image: url(images/MSCA-Accessories-Mod-A-WDA2-Preorder-tablet.jpg)">
+        <center> <div id="fixedheader" style="background-image: url(images/Banner-Computer-Design-Technologyl-3.jpg1.jpg)" >
+                <h3><b style="color: yellow"> Mohsin Accessories Ltd.</b></h3></div></center>
+
+        <center> <div id="fixedfooter">@All rights are reserved by mohsinaccessories.com.bd </div></center>
+
+
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#"><b>Mohsin Accessories</b></a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="display.xhtml">Product</a></li>
+                    <li><a href="index.xhtml">Registration</a></li>
+                    <li><a href="login.xhtml">Login</a></li>
+                    <li><a href="contact_us.xhtml">Contact Us</a></li>
+                </ul>
+                <form class="navbar-form navbar-left" action="/action_page.php">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="search"></input>
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </nav>
+
+        <div class="container">
+            <h3>Welcome to the world of accessories!</h3>
+            <p>  <p style="color: maroon">Are You visiting here for the first time! Please <br><a href="index.xhtml"><b>register  here</b></a> to login and browse all the accessories.</br></p></p>
+            <p>Use the .navbar-form class to vertically align form elements inside the navbar.</p>
+            <p>The .input-group class is a container to enhance an input by adding an icon,<br></br> text or a button in front or behind it as a "help text".</p>
+            <p>The .input-group-btn class attaches a button next to an input field. <br></br>This is often used as a search bar:</p>
+
+        </div>
+
+    </body>
+</html>
